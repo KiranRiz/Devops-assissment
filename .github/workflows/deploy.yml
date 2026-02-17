@@ -18,6 +18,7 @@ jobs:
           key: ${{ secrets.EC2_SSH_KEY }}
           script: |
             cd ~/mySimple_App
+            git pull origin main || true
             sudo docker stop myapp-container || true
             sudo docker rm myapp-container || true
             sudo docker build -t sample-app .
