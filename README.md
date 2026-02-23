@@ -89,9 +89,8 @@ ssh -i your-key.pem ubuntu@<control-machine-ip>
 
 ### Step 13: Check in Browser
 - Open browser and go to: Open user IP address in url with port 80 (example: http://13.63.19.115:80)
-### Auto-Deployment - These keys enable GitHub Actions to securely connect to EC2, pull latest code, rebuild Docker image, and deploy updated container add these to your GitHib Actions:
-### EC2_HOST - Contains the EC2 instance public IP address for target server connection
+### Add Secret keys into your GitHub -> Actions
+- Target IP address 
+- Secret key
+- Push changes and run IP address in browser.
 
-### EC2_SSH_KEY - Stores the private SSH key for secure authentication
-
-### Pipeline Trigger - Automatically runs on every push to main branch
