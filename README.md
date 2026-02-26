@@ -127,22 +127,17 @@ In your repository, create this folder structure
 - vim deploy.yml (Write your github actions workflow here)
 
 ### Step 17: Test the CI/CD Pipeline
-# Make a change to index.html file
-- vim index.html
-
-# Commit and push
+- ~/mySample_App
+- vim index.html (Make change in this file, & commit & Push changes)
 - git add .
 - git commit -m "updated website content"
 - git push
 
-# Go to GitHub → Actions tab
-# You will see the workflow running
-# Wait for it to complete (green checkmark)
-
-# Step 18: Final Verification
-# After workflow completes, open browser
-- http://13.63.19.115:80
-
-# Also verify on server
-- ssh -i ~/.ssh/id_rsa ubuntu@13.63.19.115
+### Step 18: Go to -> Actions Tab
+- check running pipeline workflow
+  
+# Step 19: Final Verification
+Open browser & enter IP address also ssh into remote server to check Docker Container is running
+- ssh -i ~/.ssh/id_rsa ubuntu@13.63.19.115 
 - sudo docker ps
+- exit
