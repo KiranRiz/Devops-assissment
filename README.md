@@ -127,31 +127,30 @@ In your repository, create this folder structure
 - vim deploy.yml (Write your github actions workflow here)
 
 ### Step 17: Test the CI/CD Pipeline
-# Make change in your index.html
+# Make changes in your index.file
 vim index.html  (Change some text)
-
-# Commit and push
+# Commit and Push
 git add .
 git commit -m "updated website content"
 git push
 
-# Go to GitHub → Actions tab
-# You will see the workflow running
-# Make a change to index.html file
-vim index.html  (Change some text)
+# Go to GitHub -> Actions tab
+- you will see a running flow
+- Make a change to index.html file
+- vim index.html  (Change some text)
 
-# Commit & Push Changes
+# Again Commit & Push Changes
 - git add .
 - git commit -m "updated website content"
 - git push
 
 # Go to GitHub -> Actions Tab
-# Workflow will be running here
+- Working flow will be running here.
 
-Step 18: 
-# After workflow completes open browser
+Step 18:
+# Open Browser and enter your IP address
 http://13.63.19.115:80 (Your updated website should be visible!)
 
-# Also verify on server
+# Also Verify on Server
 ssh -i ~/.ssh/id_rsa ubuntu@13.63.19.115
 sudo docker ps  (Container should be running with new timestamp)
