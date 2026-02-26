@@ -136,7 +136,7 @@ In your repository, create this folder structure
 ### Step 18: Go to -> Actions Tab
 - check running pipeline workflow
   
-# Step 19: Final Verification
+### Run Application
 Open browser & enter IP address also ssh into remote server to check Docker Container is running
 - ssh -i ~/.ssh/id_rsa ubuntu@13.63.19.115 
 - sudo docker ps
