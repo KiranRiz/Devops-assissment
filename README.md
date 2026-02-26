@@ -100,10 +100,10 @@ Check if container is running:
 - Open browser and go to: Open user IP address in url with port 80 (example: http://13.63.19.115:80)
   
 ### Step 14: Setup GitHub Repository
-# Create repository on GitHub named "Devops-assissment". On your local machine type:  
-git init
-git add .
-git commit -m "initial commit"
+Create Repository in your GitHub
+- git init
+- git add .
+- git commit -m "initial commit"
 
 ### Step 15: Configure GitHub Secrets
 1. Go to your GitHub repository
@@ -122,13 +122,12 @@ git commit -m "initial commit"
    
 ### Step 16: Create GitHub Actions Workflow
 In your repository, create this folder structure
-mkdir -p .github/workflows
-cd .github/workflows
-vim deploy.yml
-# Write your GitHub Actions workflow code here
+- mkdir -p .github/workflows
+- cd .github/workflows
+- vim deploy.yml (Write your github actions workflow here)
 
 ### Step 17: Test the CI/CD Pipeline
-# Make a change to index.html file
+# Make change in your index.html
 vim index.html  (Change some text)
 
 # Commit and push
@@ -141,16 +140,16 @@ git push
 # Make a change to index.html file
 vim index.html  (Change some text)
 
-# Commit and push
-git add .
-git commit -m "updated website content"
-git push
+# Commit & Push Changes
+- git add .
+- git commit -m "updated website content"
+- git push
 
-# Go to GitHub → Actions tab
-# You will see the workflow running
+# Go to GitHub -> Actions Tab
+# Workflow will be running here
 
 Step 18: 
-# After workflow completes, open browser
+# After workflow completes open browser
 http://13.63.19.115:80 (Your updated website should be visible!)
 
 # Also verify on server
